@@ -1,13 +1,19 @@
 # Tanju
 
-Fil Necati Linux projesinin Github üzerinde çalışan bir çeşit amatör pacman paket deposu. 
+Fil Necati Linux projesinin amatör dağıtım deposu.
 
-Eğer eklemekte ısrarcıysanız alttaki satırları `/etc/pacman.conf`'a ekleyin.
 
-TBC
+# Pacman üzerinde nasıl kullanırım?
+
+`fnl-mirrorlist` dosyasını `/etc/pacman.d/fnl-mirrorlist` konumuna yerleştirdikten sonra
+`pacman.conf` dosyasına aşağıdaki satırları eklemeniz yeterli olacaktır.
 
 ```
-[tanju]
-SigLevel = Optional
-Server = https://raw.github.com/fil-necati-linux/tanju/master/repositories/$arch/$repo
+[canan]
+SigLevel = Optional TrustedOnly
+Include = /etc/pacman.d/fnl-mirrorlist
+
+[remzi]
+SigLevel = Optional TrustedOnly
+Include = /etc/pacman.d/fnl-mirrorlist
 ```
