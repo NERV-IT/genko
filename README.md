@@ -1,19 +1,18 @@
-# Tanju
+# Genko
 
-Fil Necati Linux projesinin amatör dağıtım deposu.
+Pacman repository of NERV Linux
 
+# How to use It?
 
-# Pacman üzerinde nasıl kullanırım?
-
-`fnl-mirrorlist` dosyasını `/etc/pacman.d/fnl-mirrorlist` konumuna yerleştirdikten sonra
-`pacman.conf` dosyasına aşağıdaki satırları eklemeniz yeterli olacaktır.
+Copy `nerv-mirrorlist` to `/etc/pacman.d/nerv-mirrorlist` and then add the lines below to
+`/etc/pacman.conf` or anywhere you stuff with
 
 ```
-[canan]
+[extension]
 SigLevel = Optional TrustedOnly
-Include = /etc/pacman.d/fnl-mirrorlist
+Include = /etc/pacman.d/nerv-mirrorlist
 
-[remzi]
+[public]
 SigLevel = Optional TrustedOnly
-Include = /etc/pacman.d/fnl-mirrorlist
+Include = /etc/pacman.d/nerv-mirrorlist
 ```

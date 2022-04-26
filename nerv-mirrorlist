@@ -1,0 +1,4 @@
+# Gitlab
+Server = https://gitlab.com/fil-necati-linux/pacman-repo/-/raw/master/repositories/$arch/$repo
+# Github
+Server = https://raw.github.com/NERV-IT/genko/master/repositories/$arch/$repo
